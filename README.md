@@ -137,7 +137,7 @@ mask_detection/              # 项目根目录
 
 #### 1.1 图片检测
 
-![图片检测效果](src/runs/detect/mask_detection/exp1/图片检测.png)
+![图片检测效果](src/runs/detect/mask_detection/exp1/image_detection.png)
 
 **说明**：对单张图片进行口罩佩戴检测，标注出佩戴口罩和未佩戴口罩的人员。
 
@@ -147,7 +147,7 @@ mask_detection/              # 项目根目录
 
 #### 1.2 视频检测
 
-![视频检测效果](src/runs/detect/mask_detection/exp1/视频检测.gif)
+![视频检测效果](src/runs/detect/mask_detection/exp1/video_detection.gif)
 
 **说明**：对视频文件进行逐帧口罩检测，实时标注目标位置并进行追踪。
 
@@ -158,7 +158,7 @@ mask_detection/              # 项目根目录
 
 #### 1.3 摄像头实时检测
 
-![摄像头检测效果](src/runs/detect/mask_detection/exp1/摄像头检测.gif)
+![摄像头检测效果](src/runs/detect/mask_detection/exp1/camera_detection.gif)
 
 **说明**：通过电脑摄像头进行实时口罩佩戴检测，支持实时显示和保存。
 
