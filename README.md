@@ -11,13 +11,14 @@
 - [项目结构](#项目结构)
 - [项目结果](#项目结果)
 - [使用说明](#使用说明)
-- [配置参数](#配置参数)
+- [参数说明](#参数说明)
 - [常见问题](#常见问题)
 - [许可证](#许可证)
 - [联系方式](#联系方式)
 
 ---
 
+<a id="项目介绍"></a>
 ## 📝 项目介绍
 
 ### 🎯 项目用途
@@ -50,6 +51,7 @@
 
 ---
 
+<a id="技术栈"></a>
 ## 🛠️ 技术栈
 
 ### 核心技术
@@ -76,6 +78,7 @@
 
 ---
 
+<a id="项目结构"></a>
 ## 📁 项目结构
 
 ```
@@ -127,6 +130,7 @@ mask_detection/              # 项目根目录
 
 ---
 
+<a id="项目结果"></a>
 ## 📊 项目结果
 
 ### 1. 检测效果
@@ -214,6 +218,7 @@ mask_detection/              # 项目根目录
 
 ---
 
+<a id="使用说明"></a>
 ## 🚀 使用说明
 
 ### 1. 环境准备
@@ -340,6 +345,7 @@ python src/performance_test.py --engine src/runs/detect/mask_detection/exp1/weig
 
 ---
 
+<a id="参数说明"></a>
 ### 5. 参数说明
 
 | 参数 | 类型 | 默认值 | 说明 |
@@ -357,6 +363,7 @@ python src/performance_test.py --engine src/runs/detect/mask_detection/exp1/weig
 
 ---
 
+<a id="常见问题"></a>
 ## ❓ 常见问题
 
 ### Q1: 运行时提示 CUDA out of memory
@@ -395,6 +402,7 @@ python src/performance_test.py --engine src/runs/detect/mask_detection/exp1/weig
 
 ---
 
+<a id="许可证"></a>
 ## 📄 许可证
 
 本项目采用 **MIT 许可证**。
@@ -414,6 +422,7 @@ MIT 许可证是一种宽松的开源许可证，允许他人：
 
 ---
 
+<a id="联系方式"></a>
 ## 📧 联系方式
 
 如有问题或建议，欢迎联系：
