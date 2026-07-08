@@ -14,6 +14,7 @@
 - [配置参数](#配置参数)
 - [常见问题](#常见问题)
 - [许可证](#许可证)
+- [联系方式](#联系方式)
 
 ---
 
@@ -84,48 +85,44 @@ mask_detection/              # 项目根目录
 ├── performance_results.csv  # 性能测试结果
 ├── configs/                 # 配置文件目录
 │   └── mask_dataset.yaml    # 数据集配置文件
-├── src/                     # 源代码目录
-│   ├── check_env.py         # 环境检查脚本
-│   ├── gui.py               # GUI界面主程序
-│   ├── inference.py         # 推理脚本（图片/视频/摄像头）
-│   ├── performance_test.py  # 性能测试脚本
-│   ├── train.py             # 模型训练脚本
-│   ├── visualize_loss.py    # 损失可视化脚本
-│   ├── yolov8n.pt           # YOLOv8n 预训练模型
-│   ├── yolo26n.pt           # YOLOv8n 自定义训练模型
-│   └── runs/                # 训练运行结果
-│       └── detect/
-│           └── mask_detection/
-│               └── exp1/
-│                   ├── weights/          # 模型权重文件
-│                   │   ├── best.pt       # 最佳模型权重
-│                   │   ├── best.onnx     # ONNX格式模型
-│                   │   ├── best.fp16.onnx# FP16精度ONNX模型
-│                   │   ├── best.engine   # TensorRT引擎
-│                   │   └── last.pt       # 最后一轮权重
-│                   ├── args.yaml         # 训练参数配置
-│                   ├── results.csv       # 训练结果数据
-│                   ├── results.png       # 训练结果图表
-│                   ├── confusion_matrix.png         # 混淆矩阵
-│                   ├── confusion_matrix_normalized.png  # 归一化混淆矩阵
-│                   ├── BoxP_curve.png    # Precision曲线
-│                   ├── BoxR_curve.png    # Recall曲线
-│                   ├── BoxPR_curve.png   # PR曲线
-│                   ├── BoxF1_curve.png   # F1曲线
-│                   ├── labels.jpg        # 类别标签统计
-│                   ├── train_batch0.jpg  # 训练批次样本
-│                   ├── train_batch1.jpg
-│                   ├── train_batch2.jpg
-│                   ├── val_batch0_labels.jpg   # 验证集标签
-│                   ├── val_batch0_pred.jpg     # 验证集预测
-│                   ├── val_batch1_labels.jpg
-│                   ├── val_batch1_pred.jpg
-│                   ├── val_batch2_labels.jpg
-│                   └── val_batch2_pred.jpg
-└── images/                  # README展示图片目录（需自行创建）
-    ├── image_detection.gif  # 图片检测效果
-    ├── video_detection.gif  # 视频检测效果
-    └── camera_detection.gif # 摄像头检测效果
+└── src/                     # 源代码目录
+    ├── check_env.py         # 环境检查脚本
+    ├── gui.py               # GUI界面主程序
+    ├── inference.py         # 推理脚本（图片/视频/摄像头）
+    ├── performance_test.py  # 性能测试脚本
+    ├── train.py             # 模型训练脚本
+    ├── visualize_loss.py    # 损失可视化脚本
+    ├── yolov8n.pt           # YOLOv8n 预训练模型
+    ├── yolo26n.pt           # YOLOv8n 自定义训练模型
+    └── runs/                # 训练运行结果
+        └── detect/
+            └── mask_detection/
+                └── exp1/
+                    ├── weights/          # 模型权重文件
+                    │   ├── best.pt       # 最佳模型权重
+                    │   ├── best.onnx     # ONNX格式模型
+                    │   ├── best.fp16.onnx# FP16精度ONNX模型
+                    │   ├── best.engine   # TensorRT引擎
+                    │   └── last.pt       # 最后一轮权重
+                    ├── args.yaml         # 训练参数配置
+                    ├── results.csv       # 训练结果数据
+                    ├── results.png       # 训练结果图表
+                    ├── confusion_matrix.png         # 混淆矩阵
+                    ├── confusion_matrix_normalized.png  # 归一化混淆矩阵
+                    ├── BoxP_curve.png    # Precision曲线
+                    ├── BoxR_curve.png    # Recall曲线
+                    ├── BoxPR_curve.png   # PR曲线
+                    ├── BoxF1_curve.png   # F1曲线
+                    ├── labels.jpg        # 类别标签统计
+                    ├── train_batch0.jpg  # 训练批次样本
+                    ├── train_batch1.jpg
+                    ├── train_batch2.jpg
+                    ├── val_batch0_labels.jpg   # 验证集标签
+                    ├── val_batch0_pred.jpg     # 验证集预测
+                    ├── val_batch1_labels.jpg
+                    ├── val_batch1_pred.jpg
+                    ├── val_batch2_labels.jpg
+                    └── val_batch2_pred.jpg
 ```
 
 ---
@@ -136,7 +133,7 @@ mask_detection/              # 项目根目录
 
 #### 1.1 图片检测
 
-![图片检测效果](images/image_detection.gif)
+![图片检测效果](src/runs/detect/mask_detection/exp1/图片检测.png)
 
 **说明**：对单张图片进行口罩佩戴检测，标注出佩戴口罩和未佩戴口罩的人员。
 
@@ -146,7 +143,7 @@ mask_detection/              # 项目根目录
 
 #### 1.2 视频检测
 
-![视频检测效果](images/video_detection.gif)
+![视频检测效果](src/runs/detect/mask_detection/exp1/视频检测.gif)
 
 **说明**：对视频文件进行逐帧口罩检测，实时标注目标位置并进行追踪。
 
@@ -157,7 +154,7 @@ mask_detection/              # 项目根目录
 
 #### 1.3 摄像头实时检测
 
-![摄像头检测效果](images/camera_detection.gif)
+![摄像头检测效果](src/runs/detect/mask_detection/exp1/摄像头检测.gif)
 
 **说明**：通过电脑摄像头进行实时口罩佩戴检测，支持实时显示和保存。
 
@@ -360,42 +357,6 @@ python src/performance_test.py --engine src/runs/detect/mask_detection/exp1/weig
 
 ---
 
-## 📝 如何添加展示图片
-
-### 方法一：直接上传到 GitHub
-
-1. 打开 GitHub 仓库页面
-2. 点击 **Add file** → **Upload files**
-3. 选择你的 GIF/PNG 文件上传（如 `image_detection.gif`）
-4. 在仓库中创建 `images/` 文件夹并上传图片
-5. 复制文件的 GitHub 链接
-6. 在 README.md 中替换对应的图片链接
-
-### 方法二：本地添加后推送
-
-```bash
-# 创建 images 目录
-mkdir images
-
-# 将图片复制到 images/ 目录
-copy "C:\你的图片路径\image_detection.gif" images\
-
-# 提交并推送
-git add images/
-git commit -m "添加检测效果展示图"
-git push
-```
-
-### 图片格式要求
-
-| 类型 | 推荐格式 | 最大大小 | 说明 |
-|------|---------|---------|------|
-| 静态截图 | PNG/JPG | 5MB | 清晰展示效果 |
-| 动态演示 | GIF | 10MB | 展示实时检测效果 |
-| 图表 | PNG | 2MB | 训练结果、性能对比 |
-
----
-
 ## ❓ 常见问题
 
 ### Q1: 运行时提示 CUDA out of memory
@@ -436,7 +397,20 @@ git push
 
 ## 📄 许可证
 
-本项目采用 MIT 许可证 - 详见 [LICENSE](LICENSE) 文件。
+本项目采用 **MIT 许可证**。
+
+### 许可证说明
+
+MIT 许可证是一种宽松的开源许可证，允许他人：
+
+| 权限 | 说明 |
+|------|------|
+| ✅ 商用 | 可以将代码用于商业用途 |
+| ✅ 修改 | 可以修改代码 |
+| ✅ 复制 | 可以复制代码 |
+| ✅ 分发 | 可以分发修改后的代码 |
+
+**唯一要求**：在分发的代码中保留原作者的版权声明。
 
 ---
 
@@ -444,8 +418,8 @@ git push
 
 如有问题或建议，欢迎联系：
 
-- GitHub: [@你的用户名](https://github.com/你的用户名)
-- 邮箱: your.email@example.com
+- GitHub: [@Matoimaru-Gyuki](https://github.com/Matoimaru-Gyuki)
+- 邮箱: 615752972@qq.com
 
 ---
 
