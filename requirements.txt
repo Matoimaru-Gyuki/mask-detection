@@ -1,0 +1,12 @@
+# === 必装（GPU 训练 + 推理） ===
+# torch 请单独安装，不要用 pip install torch
+# pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
+ultralytics>=8.0.0
+opencv-python
+onnx
+
+# === 可选 ===
+# TensorRT 加速: pip install tensorrt-cu12
+# ONNX GPU 推理: pip install onnxruntime-gpu
+# GUI 界面:     pip install pyqt5
+# 损失曲线:     pip install matplotlib pandas

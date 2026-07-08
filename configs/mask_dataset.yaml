@@ -1,0 +1,16 @@
+# 口罩检测数据集配置
+# 路径相对于 train.py 的运行目录（src/）
+
+path: D:\project13\mask_detection\datasets
+train: images/train
+val: images/val
+test: images/test
+
+# 类别数
+nc: 3
+
+# 类别名称
+# 0: R_mask — 正确佩戴 (Right)
+# 1: W_mask — 错误佩戴 (Wrong)
+# 2: N_mask — 未佩戴 (None)
+names: ['R_mask', 'W_mask', 'N_mask']
